@@ -1,0 +1,272 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999;
+    border-bottom: none;
+}
+
+.title {
+    font-size: 50px;
+    padding: 10px;
+    
+}
+
+.navBarLinks {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.searchButton {
+    background-color: #e7e7e7;
+}
+
+.navBarMessage {
+    font-size: 20px;
+    top: 10px;
+}
+
+.loginLink {
+    color: white;
+    margin-top: 7px;
+    padding: 7px;
+}
+
+.uploadButton {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid #d1d1d1;
+    position: fixed;
+    top: 85vh;
+    left: 90%;
+    box-shadow: 5px 5px 5px #b1b1b1;
+
+    
+}
+
+.uploadButton a {
+    color: #d1d1d1;
+}
+
+.uploadButton:hover{
+    background: deepskyblue;
+    opacity: 0.7;
+    border: 7px solid #f1f1f1;
+    box-shadow: 10px 10px 10px #b1b1b1;
+}
+
+.uploadButton:hover a {
+    color: white;
+}
+
+.uploadButton:active {
+    background-color: deepskyblue;
+    opacity: 1;
+    border: 7px solid #f1f1f1;
+    box-shadow: 10px 10px 10px #b1b1b1;
+}
+
+.uploadButton:active a {
+    color: white;
+}
+
+.modalContent {
+    padding: 10px;
+}
+
+.modalButton {
+    width: 500px;
+    height: 100px;
+    
+}
+
+.coverImage {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#indexTitle {
+    font-size: 100px;
+    font-weight: 100;
+    color: #f9f9f9;
+    text-shadow: 5px 0 #aaaaaa;
+    background: rgba(44, 44, 44, 0.7);
+    width: 500px;
+    display: block;
+    letter-spacing: 15px;
+}
+
+.sectionTitle {
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-bottom: 5px solid #e7e7e7;
+    padding-left: 85px;
+    font-size: 50vh;
+    padding-bottom: 0px;
+}
+
+.contentPart {
+    padding-left: 70px;
+}
+
+.contentImages {
+    height: auto;
+    width: 20%;
+    margin: 10px;
+    border-bottom: 5px solid #e7e7e7;
+    border-right: 5px solid #e7e7e7;
+    box-sizing: border-box;
+}
+
+#footer {
+    padding: 40px 0;
+    background: #e7e7e7;
+    margin-top: 25vh;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+#loginSignupHeader {
+    background-color: #f9f9f9;
+    padding-left: 7vh;
+}
+
+.clientForm {
+    width: 100%;
+    padding: 50px;
+}
+
+#signUpForm {
+    padding-left: 90px;
+    border-left: 1px solid #e7e7e7;
+}
+
+
+.carouselSlider {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselImage {
+    width: 100%;
+    height: 50vh;
+    background: no-repeat center center / cover;
+}
+
+#editorsPicksHeader {
+    text-align: center
+}
+
+.cardsContainer {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.cardsContainer .btn
+{
+    margin: 8px !important;
+}
+
+.cards {
+    width: calc(33% - 15px);
+
+    margin: 7px;
+    display: inline-block;
+    float: left;
+
+}
+
+.cardsImagesContainer
+{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardsImagesBtnContainer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 200ms linear 0s;
+}
+
+.cardsImages {
+    
+}
+
+.cardsButton {
+    border-radius: 50px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 5px solid white;
+}
+
+.cardsButton .fa
+{
+    margin-top: 0 !important;
+}
+
+.cardsContent{
+    height: 0;
+    overflow: hidden;
+    transition: all 200ms linear 0s;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.cards:hover .cardsContent
+{
+    padding: 10px;
+    height: auto;
+}
+
+.cards:hover .cardsImagesBtnContainer
+{
+    opacity: 1;
+}
+
+.cards:hover .cardsImages {
+    opacity: 0.5;
+}
